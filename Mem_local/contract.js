@@ -27,7 +27,7 @@ export async function handle(state, action) {
     /**
      * @param {number[]} vector - Embedding vector with 768 points
      */
-    let result = 0;
+    let result = -1;
     if (input.data.vector.length === 768) {
       const inputVector = normalizeL2(input.data.vector);
 
